@@ -1,4 +1,5 @@
 package tui;
+import java.util.Scanner;
 
 
 /**
@@ -15,21 +16,50 @@ public class MainMenuUI
     /**
      * Constructor for objects of class MainMenuUI
      */
-    public MainMenuUI()
-    {
+    public MainMenuUI(){
+    
         // initialise instance variables
         x = 0;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void start() {
+       
+        mainMenu();
+    }
+    
+    private void mainMenu() {
+       boolean exit = false;
+       while(!exit) {
+          int choice = writeMainMenu(); 
+          if(choice == 1) { //create the customer
+            
+          }
+          else if (choice == 2) { //find the customer
+            
+          } 
+          else {
+            exit = true;
+            System.out.println("Fortsat god dag.");
+          }//end else  
+       }//end while
+    }
+    
+    private int writeMainMenu() {
+        // makes an object keyboard to read input from the screen
+        int choice = 0;
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("*** Kundemenu ***");
+        System.out.println(" (1) Opret kunde");
+        System.out.println(" (2) Fremsøg kunde");
+        System.out.println(" (3) Afslut");
+        System.out.print("\n Indtast et tal: ");
+        while (!keyboard.hasNextInt()) {         
+            System.out.println("Du skal indtaste et tal - prøv igen.");
+            keyboard.nextLine();
+            
+        }
+
+        choice = keyboard.nextInt();
+        return choice;
     }
 }

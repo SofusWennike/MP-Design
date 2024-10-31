@@ -10,18 +10,26 @@ package model;
 public class Friend
 {
     // instance variables - replace the example below with your own
-    private String name, address, postalCode, city, phone;
+    private String name; 
+    private String address;
+    private String postalCode;
+    private String city; 
+    private String phone;
 
     /**
      * Constructor for objects of class Friend
      */
-    public Friend()
+    public Friend(String name, String address, String postalCode, String city, String phone)
     {
-        // initialise instance variables
+        this.name = name;
+        this.address = address;
+        this.postalCode = postalCode;
+        this.city = city;
+        this.phone = phone;
         
     }
 
     public String getPhone(){
-        return this.phone;
+        return phone;
     }
 }

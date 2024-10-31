@@ -1,5 +1,4 @@
 package model;
-
 import java.util.ArrayList;
 
 /**
@@ -19,19 +18,31 @@ public class FriendContainer
      */
     private FriendContainer()
     {
-        // initialise instance variables
-        
     }
-
+    
     public static FriendContainer getInstance() {
         if (instance == null) {
             instance = new FriendContainer();
         }
-        
         return instance;
     }
     
+    public void addFriend(Friend friend){
+        friends.add(friend);
+    }
+    
+    public void createFriend(String phone, String postalCode, String address,String name, String city){
+        FriendContainer friendContainer = FriendContainer.getInstance();
+        Friend friend = new Friend(phone, postalCode, address, name, city);
+        friendContainer.addFriend(friend);
+    }
+    
     public Friend findFriend(String phone){
-        return null;
+        for (Friend friend : friends){
+            if (friend.getPhone().equals(phone)){
+                return friend;
+            }
+        }
+        return null; //friend not found
     }
 }

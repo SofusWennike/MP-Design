@@ -27,8 +27,10 @@ public class LoanController
     // Opretter lån ved at finde ven og kopi via deres controllere
     public void createLoan(String loanNumber, String borrowDate, int period, boolean state, String returnDate, String phone, String serialNumber){
         Friend friend = this.friendController.findFriend(phone);
-        Copy copy = this.lpController.findCopy(serialNumber);
-        
+        //TODO Insert når Sebastian har lavet hans - Copy copy = this.lpController.findCopy(serialNumber);
+        Copy copy = null;
+        //TODO remove Copy copy når Sebastian har lavet hans
         LoanContainer.getInstance().createLoan(loanNumber, borrowDate, period, state, returnDate, friend, copy);
+    
     }
 }

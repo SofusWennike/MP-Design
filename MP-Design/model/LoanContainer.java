@@ -31,7 +31,9 @@ public class LoanContainer
         return instance;
     }
     
-    public void createLoan(Friend friend, Copy copy){
-        loans.add(new Loan(friend, copy));
+    public void createLoan(String loanNumber, String borrowDate, int period, boolean state, String returnDate, Friend friend, Copy copy){
+        Loan newLoan = new Loan(loanNumber, borrowDate, period, state, returnDate, friend, copy);
+        
+        loans.add(newLoan);
     }
 }

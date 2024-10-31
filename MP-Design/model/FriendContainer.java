@@ -32,9 +32,9 @@ public class FriendContainer
     }
     
     public void createFriend(String phone, String postalCode, String address,String name, String city){
-        FriendContainer friendContainer = FriendContainer.getInstance();
-        Friend friend = new Friend(phone, postalCode, address, name, city);
-        friendContainer.addFriend(friend);
+        Friend newFriend = new Friend(phone, postalCode, address, name, city);
+        
+        friends.add(newFriend);
     }
     
     public Friend findFriend(String phone){

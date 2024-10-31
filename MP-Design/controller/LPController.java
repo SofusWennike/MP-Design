@@ -1,5 +1,7 @@
 package controller;
-
+import model.Copy;
+import model.LPContainer;
+import model.LP;
 
 /**
  * Write a description of class LPController here.
@@ -10,26 +12,24 @@ package controller;
 public class LPController
 {
     // instance variables - replace the example below with your own
-    private int x;
-
+    LPContainer lpContainer;
+    
     /**
      * Constructor for objects of class LPController
      */
     public LPController()
     {
         // initialise instance variables
-        x = 0;
+        this.lpContainer = LPContainer.getInstance();
+    }
+    
+    public Copy findCopy(String serialNumber){
+        return lpContainer.findLPCopy(serialNumber);
+    }
+    
+    public void createTestData(){
+        lpContainer.testData();
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+
 }

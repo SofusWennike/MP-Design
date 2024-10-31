@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=LP
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ LP\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=barcode\ title\ artist\ publicationDate
+comment1.target=LP(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ LP\r\n
+comment2.params=serialNumber
+comment2.target=Copy\ findCopy(java.lang.String)
+comment3.params=serialNumber\ purchaseDate\ purchasePrice\ isAvailable
+comment3.target=Copy\ createCopy(java.lang.String,\ java.lang.String,\ double,\ boolean)
+comment4.params=copy
+comment4.target=void\ addCopy(Copy)
+numComments=5

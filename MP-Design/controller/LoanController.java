@@ -3,14 +3,14 @@ package controller;
 import model.*;
 
 /**
- * Write a description of class LoanController here.
- *
+ * Controller-klasse der koordinerer oprettelse af lån
+ * mellem venner og LP'er
  * @author (your name)
  * @version (a version number or a date)
  */
 public class LoanController
 {
-    // instance variables - replace the example below with your own
+    // instance variables 
     private FriendController friendController;
     private LPController lpController;    
 
@@ -24,6 +24,7 @@ public class LoanController
         this.lpController = new LPController();
     }
 
+    // Opretter lån ved at finde ven og kopi via deres controllere
     public void createLoan(String loanNumber, String borrowDate, int period, boolean state, String returnDate, String phone, String serialNumber){
         Friend friend = this.friendController.findFriend(phone);
         Copy copy = this.lpController.findCopy(serialNumber);

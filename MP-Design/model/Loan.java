@@ -31,5 +31,19 @@ public class Loan
         this.copy = copy;
     }
 
+    public String getLoanNumber(){
+        return this.loanNumber;
+    }
     
+    public String getReturnDate(){
+        return this.returnDate;
+    }
+    
+    public Friend getFriend(){
+        return this.friend;
+    }
+    
+    public Copy getCopy(){
+        return this.copy;
+    }
 }

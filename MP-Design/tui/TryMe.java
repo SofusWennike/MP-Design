@@ -39,5 +39,7 @@ public class TryMe
         loanController.createLoan("1", "1", 1, true, "1", "TestPhone1", "TestSerialNumber2-2");
     }
     
-    
+    public Loan findLoan(String loanNumber) {
+        return loanController.findLoanByLoanNumber(loanNumber);
+    }
 }

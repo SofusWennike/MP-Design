@@ -10,4 +10,6 @@ comment3.params=
 comment3.target=void\ testFriendData()
 comment4.params=
 comment4.target=void\ createLoan()
-numComments=5
+comment5.params=loanNumber
+comment5.target=model.Loan\ findLoan(java.lang.String)
+numComments=6

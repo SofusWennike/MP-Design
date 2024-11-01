@@ -13,7 +13,6 @@ public class LPContainer
     // instance variables - replace the example below with your own
     private static LPContainer instance;
     private ArrayList<LP> lpList;
-    private LP lp;
 
     /**
      * Constructor for objects of class LPContainer

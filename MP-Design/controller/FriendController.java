@@ -11,17 +11,17 @@ import model.Friend;
  */
 public class FriendController
 {
-    private FriendContainer friendContainer;
+    
     /**
      * Constructor for objects of class friendController
      */
     public FriendController()
     {
-        this.friendContainer = friendContainer.getInstance();
+        
     }
 
     public Friend findFriend (String phone){
-        return friendContainer.findFriend(phone);
+        return FriendContainer.getInstance().findFriend(phone);
     }
     
 }

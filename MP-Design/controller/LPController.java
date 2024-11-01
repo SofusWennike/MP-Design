@@ -13,7 +13,6 @@ public class LPController
 {
     // instance variables - replace the example below with your own
     //Dette skal muligvis slettes, da det kun bruges til test
-    private LPContainer lpContainer;
     
     /**
      * Constructor for objects of class LPController
@@ -22,15 +21,15 @@ public class LPController
     {
         // initialise instance variables
         //Dette skal muligvis slettes, da det kun bruges til test
-        this.lpContainer = lpContainer.getInstance();
+        
     }
     
     public Copy findCopy(String serialNumber){
-        return lpContainer.findLPCopy(serialNumber);
+        return LPContainer.getInstance().findLPCopy(serialNumber);
     }
     
     public void createTestData(){
-        lpContainer.testData();
+        LPContainer.getInstance().testData();
     }
 
 

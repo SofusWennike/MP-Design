@@ -8,4 +8,6 @@ comment2.params=
 comment2.target=LoanContainer\ getInstance()
 comment3.params=loanNumber\ borrowDate\ period\ state\ returnDate\ friend\ copy
 comment3.target=void\ createLoan(java.lang.String,\ java.lang.String,\ int,\ boolean,\ java.lang.String,\ Friend,\ Copy)
-numComments=4
+comment4.params=loanNumber
+comment4.target=Loan\ findLoanByLoanNumber(java.lang.String)
+numComments=5

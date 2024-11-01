@@ -38,4 +38,14 @@ public class LoanContainer
         
         loans.add(newLoan);
     }
+    
+    public Loan findLoanByLoanNumber(String loanNumber){
+        for (Loan loan : loans){
+            if (loan.getLoanNumber().equals(loanNumber)) {
+                return loan;
+            }
+        }
+        
+        return null;
+    }
 }

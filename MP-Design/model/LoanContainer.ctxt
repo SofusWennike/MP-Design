@@ -10,4 +10,6 @@ comment3.params=loanNumber\ borrowDate\ period\ state\ returnDate\ friend\ copy
 comment3.target=void\ createLoan(java.lang.String,\ java.lang.String,\ int,\ boolean,\ java.lang.String,\ Friend,\ Copy)
 comment4.params=loanNumber
 comment4.target=Loan\ findLoanByLoanNumber(java.lang.String)
-numComments=5
+comment5.params=friend
+comment5.target=java.util.ArrayList\ findLoansByFriend(Friend)
+numComments=6

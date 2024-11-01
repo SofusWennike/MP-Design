@@ -20,8 +20,12 @@ public class FriendController
         
     }
 
-    public Friend findFriend (String phone){
+    public Friend findFriend(String phone){
         return FriendContainer.getInstance().findFriend(phone);
+    }
+    
+    public void removeFriendByPhone(String phone) {
+        FriendContainer.getInstance().removeFriendByPhone(phone);
     }
     
 }

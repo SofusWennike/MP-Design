@@ -67,4 +67,10 @@ public class LPContainer
     public void addLP(LP lp){
         lpList.add(lp);
     }
+    
+    public void removeCopyBySerialNumber(String serialNumber) {
+        for (LP lp : lpList) {
+            lp.removeCopyBySerialNumber(serialNumber);
+        }
+    }
 }

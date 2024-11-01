@@ -48,4 +48,15 @@ public class LoanContainer
         
         return null;
     }
+    
+    public ArrayList<Loan> findLoansByFriend(Friend friend) {
+        ArrayList<Loan> friendLoans = new ArrayList<>();
+        for (Loan loan : loans) {
+            if (loan.getFriend().equals(friend)) {
+                friendLoans.add(loan);
+            }
+        }
+        
+        return friendLoans;
+    }
 }

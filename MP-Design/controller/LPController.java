@@ -32,5 +32,7 @@ public class LPController
         LPContainer.getInstance().testData();
     }
 
-
+    public void removeCopyBySerialNumber(String serialNumber) {
+        LPContainer.getInstance().removeCopyBySerialNumber(serialNumber);
+    }
 }

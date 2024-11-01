@@ -14,4 +14,6 @@ comment5.params=barcode\ title\ artist\ publicationDate
 comment5.target=LP\ createLP(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
 comment6.params=lp
 comment6.target=void\ addLP(LP)
-numComments=7
+comment7.params=serialNumber
+comment7.target=void\ removeCopyBySerialNumber(java.lang.String)
+numComments=8

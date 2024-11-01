@@ -61,4 +61,12 @@ public class FriendContainer
         
         return null;
     }
+    
+    public void removeFriendByPhone(String phone) {
+        for (Friend friend : friends) {
+            if (friend.getPhone().equals(phone)) {
+                friends.remove(friend);
+            }
+        }
+    }
 }

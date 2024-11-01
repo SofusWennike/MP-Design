@@ -6,4 +6,6 @@ comment1.target=FriendController()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ friendController\r\n
 comment2.params=phone
 comment2.target=model.Friend\ findFriend(java.lang.String)
-numComments=3
+comment3.params=phone
+comment3.target=void\ removeFriendByPhone(java.lang.String)
+numComments=4

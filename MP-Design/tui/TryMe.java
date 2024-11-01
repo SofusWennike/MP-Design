@@ -3,6 +3,7 @@ package tui;
 import model.*;
 
 import controller.*;
+import java.util.ArrayList;
 
 
 /**
@@ -37,9 +38,30 @@ public class TryMe
     
     public void createLoan(){
         loanController.createLoan("1", "1", 1, true, "1", "TestPhone1", "TestSerialNumber2-2");
+        loanController.createLoan("2", "1", 1, true, "1", "TestPhone1", "TestSerialNumber2-1");
+        loanController.createLoan("3", "1", 1, true, "1", "TestPhone1", "TestSerialNumber1-1");
     }
     
     public Loan findLoan(String loanNumber) {
         return loanController.findLoanByLoanNumber(loanNumber);
+    }
+    
+    public Friend findFriend(String phone){
+        return loanController.getFriendController().findFriend(phone);
+    }
+    
+    public void removeFriendByPhone(String phone) {
+        loanController.getFriendController().removeFriendByPhone(phone);
+    }
+    
+    public ArrayList<Loan> findLoansByFriend(String phone) {
+        ArrayList<Loan> friendLoans = new ArrayList<>();
+        friendLoans = loanController.findLoansByFriend(findFriend(phone));
+        
+        for (Loan loan : friendLoans) {
+            System.out.print(loan.getFriend().getPhone() + ", " + loan.getCopy().getSerialNumber());
+        }
+        
+        return friendLoans;
     }
 }

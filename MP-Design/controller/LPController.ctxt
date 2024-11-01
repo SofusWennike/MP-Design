@@ -8,4 +8,6 @@ comment2.params=serialNumber
 comment2.target=model.Copy\ findCopy(java.lang.String)
 comment3.params=
 comment3.target=void\ createTestData()
-numComments=4
+comment4.params=serialNumber
+comment4.target=void\ removeCopyBySerialNumber(java.lang.String)
+numComments=5

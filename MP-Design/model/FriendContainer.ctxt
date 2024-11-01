@@ -14,4 +14,6 @@ comment5.params=name\ address\ postalCode\ city\ phone
 comment5.target=Friend\ createFriend(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
 comment6.params=phone
 comment6.target=Friend\ findFriend(java.lang.String)
-numComments=7
+comment7.params=phone
+comment7.target=void\ removeFriendByPhone(java.lang.String)
+numComments=8

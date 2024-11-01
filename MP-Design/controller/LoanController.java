@@ -1,6 +1,7 @@
 package controller;
 
 import model.*;
+import java.util.ArrayList;
 
 /**
  * Controller-klasse der koordinerer oprettelse af lån
@@ -35,5 +36,17 @@ public class LoanController
     
     public Loan findLoanByLoanNumber(String loanNumber){
         return LoanContainer.getInstance().findLoanByLoanNumber(loanNumber);
+    }
+    
+    public FriendController getFriendController() {
+        return this.friendController;
+    }
+    
+    public LPController getLPController(){
+        return this.lpController;
+    }
+    
+    public ArrayList<Loan> findLoansByFriend(Friend friend) {
+        return LoanContainer.getInstance().findLoansByFriend(friend);
     }
 }

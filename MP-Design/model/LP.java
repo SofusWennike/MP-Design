@@ -50,4 +50,12 @@ public class LP
     public void addCopy(Copy copy){
         copyList.add(copy);
     }
+    
+    public void removeCopyBySerialNumber(String serialNumber) {
+        for (Copy copy : copyList) {
+            if (copy.getSerialNumber().equals(serialNumber)) {
+                copyList.remove(copy);
+            }
+        }
+    }
 }

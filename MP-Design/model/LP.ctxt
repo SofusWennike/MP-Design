@@ -10,4 +10,6 @@ comment3.params=serialNumber\ purchaseDate\ purchasePrice\ isAvailable
 comment3.target=Copy\ createCopy(java.lang.String,\ java.lang.String,\ double,\ boolean)
 comment4.params=copy
 comment4.target=void\ addCopy(Copy)
-numComments=5
+comment5.params=serialNumber
+comment5.target=void\ removeCopyBySerialNumber(java.lang.String)
+numComments=6

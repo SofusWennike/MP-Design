@@ -28,8 +28,44 @@ public class Friend
         this.phone = phone;
         
     }
-
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public String getName(){
+        return this.name;
+    }
+    
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    
+    public String getAddress() {
+        return this.address;
+    }
+    
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
+    
+    public String getPostalCode() {
+        return this.postalCode;
+    }
+    
+    public void setCity(String city) {
+        this.city = city;
+    }
+    
+    public String getCity() {
+        return this.city;
+    }
+    
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+    
     public String getPhone(){
-        return phone;
+        return this.phone;
     }
 }

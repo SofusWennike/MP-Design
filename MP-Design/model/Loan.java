@@ -35,6 +35,18 @@ public class Loan
         return this.loanNumber;
     }
     
+    public String getBorrowDate() {
+        return this.borrowDate;
+    }
+    
+    public int period() {
+        return this.period;
+    }
+    
+    public boolean state() {
+        return this.state;
+    }
+    
     public String getReturnDate(){
         return this.returnDate;
     }

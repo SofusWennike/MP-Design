@@ -58,4 +58,30 @@ public class LP
             }
         }
     }
+    
+    public void printAllCopies() {
+        for (Copy copy : copyList) {
+            System.out.print(copy.getSerialNumber() + "\n");
+        }
+    }
+    
+    public ArrayList<Copy> getCopyList() {
+        return this.copyList;
+    }
+    
+    public String getBarcode() {
+        return this.barcode;
+    }
+    
+    public String getTitle() {
+        return this.title;
+    }
+    
+    public String getArtist() {
+        return this.artist;
+    }
+    
+    public String getPublicationDate() {
+        return this.publicationDate;
+    }
 }

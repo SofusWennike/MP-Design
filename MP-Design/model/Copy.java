@@ -27,6 +27,18 @@ public class Copy
     }
 
     public String getSerialNumber(){
-        return serialNumber;
+        return this.serialNumber;
+    }
+    
+    public String getPurchaseDate() {
+        return this.purchaseDate;
+    }
+    
+    public double getPurchasePrice() {
+        return this.purchasePrice;
+    }
+    
+    public boolean isAvailable() {
+        return this.isAvailable;
     }
 }

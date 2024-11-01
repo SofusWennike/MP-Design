@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=LoanMenu
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ LoanMenu\ here.\r\n\r\n\ @author\ Mogens\ Holm\ Iversen\r\n\ @version\ 0.1.0\ Initial\ draft\ version\ \r\n
+comment1.params=
+comment1.target=LoanMenu()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ LoanMenu\r\n
+comment2.params=
+comment2.target=void\ start()
+comment3.params=
+comment3.target=void\ loanMenu()
+comment4.params=
+comment4.target=int\ writeLoanMenu()
+comment5.params=keyboard
+comment5.target=int\ getIntegerFromUser(java.util.Scanner)
+numComments=6

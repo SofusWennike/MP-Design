@@ -21,7 +21,7 @@ public class LoanController
     public LoanController()
     {
         // initialise instance variables
-        this.loanContainer = loanContainer.getInstance();
+        this.loanContainer = LoanContainer.getInstance();
         this.friendController = new FriendController();
         this.lpController = new LPController();
     }

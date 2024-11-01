@@ -13,7 +13,7 @@ public class LPController
 {
     // instance variables - replace the example below with your own
     //Dette skal muligvis slettes, da det kun bruges til test
-    LPContainer lpContainer;
+    private LPContainer lpContainer;
     
     /**
      * Constructor for objects of class LPController

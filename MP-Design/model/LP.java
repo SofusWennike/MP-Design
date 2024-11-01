@@ -33,9 +33,9 @@ public class LP
         for (Copy copy : copyList) {
             match = copy.getSerialNumber();
             
-                if (match.equals(serialNumber)) {
+            if (match.equals(serialNumber)) {
                      return copy;
-                }
+            }
         
         }
         return null;

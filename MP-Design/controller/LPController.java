@@ -12,6 +12,7 @@ import model.LP;
 public class LPController
 {
     // instance variables - replace the example below with your own
+    //Dette skal muligvis slettes, da det kun bruges til test
     LPContainer lpContainer;
     
     /**
@@ -20,7 +21,8 @@ public class LPController
     public LPController()
     {
         // initialise instance variables
-        this.lpContainer = LPContainer.getInstance();
+        //Dette skal muligvis slettes, da det kun bruges til test
+        this.lpContainer = lpContainer.getInstance();
     }
     
     public Copy findCopy(String serialNumber){

@@ -11,7 +11,6 @@ import model.Friend;
  */
 public class FriendController
 {
-    private String phone;
     private FriendContainer friendContainer;
     /**
      * Constructor for objects of class friendController

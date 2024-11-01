@@ -18,6 +18,7 @@ public class FriendContainer
      */
     private FriendContainer()
     {
+        friends = new ArrayList<>();
     }
     
     public static FriendContainer getInstance() {
@@ -31,18 +32,33 @@ public class FriendContainer
         friends.add(friend);
     }
     
-    public void createFriend(String phone, String postalCode, String address,String name, String city){
-        Friend newFriend = new Friend(phone, postalCode, address, name, city);
+    public void testData(){
+        Friend testFriend1 = createFriend("TestName1", "TestAddress1", "TestPostalCode1", "TestCity1", "TestPhone1");
+        
+        Friend testFriend2 = createFriend("TestName2", "TestAddress2", "TestPostalCode2", "TestCity2", "TestPhone2");
+        
+        Friend testFriend3 = createFriend("TestName3", "TestAddress3", "TestPostalCode3", "TestCity3", "TestPhone3");
+    }
+    
+    public Friend createFriend(String name, String address, String postalCode, String city, String phone){
+        Friend newFriend = new Friend(name, address, postalCode, city, phone);
         
         friends.add(newFriend);
+        
+        return newFriend;
     }
     
     public Friend findFriend(String phone){
-        for (Friend friend : friends){
-            if (friend.getPhone().equals(phone)){
+        String match = "";
+        
+        for (Friend friend : friends) {
+            match = friend.getPhone();
+            
+            if (match.equals(phone)) {
                 return friend;
             }
         }
-        return null; //friend not found
+        
+        return null;
     }
 }

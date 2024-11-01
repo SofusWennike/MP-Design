@@ -13,6 +13,7 @@ public class LoanController
     // instance variables 
     private FriendController friendController;
     private LPController lpController;    
+    private LoanContainer loanContainer;
 
     /**
      * Constructor for objects of class LoanController
@@ -20,6 +21,7 @@ public class LoanController
     public LoanController()
     {
         // initialise instance variables
+        this.loanContainer = loanContainer.getInstance();
         this.friendController = new FriendController();
         this.lpController = new LPController();
     }

@@ -20,7 +20,7 @@ public class LoanContainer
     private LoanContainer()
     {
         // initialise instance variables
-        
+        loans = new ArrayList<>();
     }
 
     // Returnerer den eneste instans af LoanContainer
